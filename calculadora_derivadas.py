@@ -4,8 +4,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sympy.parsing.sympy_parser import parse_expr, standard_transformations, implicit_multiplication_application, convert_xor
 
-# Configuración de la página
-st.set_page_config(page_title="Calculadora de derivadas", layout="wide")
+# Configuración de la página de Streamlit
+st.set_page_config(
+    page_title="Calculadora de Derivadas",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 
 # Estilo CSS personalizado
 st.markdown("""
